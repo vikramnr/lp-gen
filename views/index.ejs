@@ -11,32 +11,33 @@
   </head>
   <body>
     <div class="container">
-      <form action="/" method="post">
+      <h4 class="mt-2 px-2">Lorem Ipsum Generator</h4>
+      <form action="/generate" method="post" class="alert alert-info">
+        <h5>Count</h5>
         <div class="form-group">
-          <label for="Count">Count</label>
-          <input type="number" class="form-control" id="count" name="count" aria-describedby="emailHelp">
+          <input type="number" class="form-control" id="count" name="count" required>
         </div>
+        <h5>Units</h5>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios1">
+          <input class="form-check-input" type="radio" name="typegen" id="words" value="words" name="words" checked>
+          <label class="form-check-label" for="words">
             Words
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-          <label class="form-check-label" for="exampleRadios2">
+          <input class="form-check-input" type="radio" id="type-gen" value="sentences" name="typegen">
+          <label class="form-check-label" for="sentences">
             Sentences
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-          <label class="form-check-label" for="exampleRadios3">
+          <input class="form-check-input" type="radio" id="type-gen" value="paragraphs" name="typegen">
+          <label class="form-check-label" for="paragraphs">
             Paragraphs
           </label>
         </div>        
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="mx-auto btn btn-primary">Submit</button>
       </form>
-    </div>
-    
+    </div>    
   </body>
 </html>
